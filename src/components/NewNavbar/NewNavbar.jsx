@@ -1,11 +1,16 @@
 import React from "react";
 
-function Navbar() {
-  return (
+
+import DrawerToggleButton from '../SideDrawer/DrawerToggleButton'
+import "./NewNavbar.css";
+
+const NewNavbar = props =>
+(
     <div>
-      <nav>
-        <div className="wrapper">
-          <ul className="main-nav">
+        
+      <nav className="navContainer">
+      <DrawerToggleButton click={props.drawerClickHandler}/>
+          <ul className="">
             <li>
               <a href="./">
                 <img
@@ -15,28 +20,28 @@ function Navbar() {
               </a>
             </li>
             <li>
-              <a className="nav-word" href="./shop">
+              <a className="" href="./shop">
                 SHOP
               </a>
             </li>
             <li>
-              <a className="nav-word" href="./fabric">
+              <a className="" href="./fabric">
                 FABRIC
               </a>
             </li>
             <li>
-              <a className="nav-word" href="./journal">
+              <a className="" href="./journal">
                 JOURNAL
               </a>
             </li>
             <li>
-              <a className="nav-word" href="./about">
+              <a className="" href="./about">
                 ABOUT
               </a>
             </li>
 
             <li>
-              <a className="nav-word" href="/">
+              <a className="" href="/">
                 LOGIN
               </a>
             </li>
@@ -44,7 +49,7 @@ function Navbar() {
             <li>
               <a href="/search">
                 <img
-                  src={require("../images/002-magnifying-glass.png")}
+                  src={require("../../images/002-magnifying-glass.png")}
                   alt=""
                 />
               </a>
@@ -52,24 +57,26 @@ function Navbar() {
 
             <li>
               <a href="/wishlist">
-                <img src={require("../images/001-heart-outline.png")} alt="" />
+                <img
+                  src={require("../../images/001-heart-outline.png")}
+                  alt=""
+                />
               </a>
             </li>
 
             <li>
               <a href="/cart">
                 <img
-                  style={{ position: "relative", bottom: "10px" }}
-                  src={require("../images/shopping-bag.png")}
+                  src={require("../../images/shopping-bag.png")}
                   alt=""
                 />
               </a>
             </li>
           </ul>
-        </div>
       </nav>
     </div>
   );
-}
 
-export default Navbar;
+   
+
+export default NewNavbar;

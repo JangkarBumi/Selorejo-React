@@ -1,0 +1,31 @@
+.navContainer{
+    height: 80px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.navContainer ul {
+    display: flex;
+    height: 100%;
+    align-items: center;
+  }
+
+  .navContainer ul li {
+    padding: 0 1rem;
+ }
+
+  @media only screen and (min-width:965px) {  
+    .navContainer ul li a{
+        font-family: ProximaNova;
+        font-weight: 600;
+        color: #33333a;
+      }
+      
+      .navContainer ul li a:hover {
+        color: #ff5e1b;
+      }
+    
+    .navContainer li:nth-child(5) {
+        margin-right: auto;
+      }
+  }
