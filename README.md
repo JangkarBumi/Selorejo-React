@@ -1,3 +1,13 @@
+Selorejo-React without implementing Responsive web design 
+https://developers.google.com/web/fundamentals/design-and-ux/responsive/
+
+URL 1 ==> https://immense-fortress-18473.herokuapp.com/
+
+//
+Selorejo-React with Responsive web design 
+
+URL 2 ==> https://selorejo-react.herokuapp.com/
+//
 change start command to  "start": "serve -s build" if you want to deploy to heroku
 
 
