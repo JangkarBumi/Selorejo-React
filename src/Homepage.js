@@ -1,31 +1,41 @@
 import React, { Component } from "react";
 import Slider from "./components/Slider";
 import Footer from "./components/Footer";
-import NewNavbar from "./components/NewNavbar/NewNavbar.jsx";
 import SideDrawer from "./components/SideDrawer/SideDrawer.jsx";
 import Backdrop from "./components/Backdrop/Backdrop.jsx";
-import Toolbar from './components/Toolbar/Toolbar'
-
+import Toolbar from "./components/Toolbar/Toolbar";
 
 class Homepage extends Component {
   state = {
     sideDrawerOpen: false
   };
 
+  drawerToggleClickHandler = () => {
+    this.setState(prevState => {
+      return { sideDrawerOpen: !prevState.sideDrawerOpen };
+    });
+  };
+
+  backdropClickHandler = () => {
+    this.setState({sideDrawerOpen : false})
+  }
 
 
   render() {
+    let sideDrawer
     let backdrop
 
-    if (this.state.sideDrawerOpen) {
-      backdrop = <Backdrop click={this.backdropClickHandler} />
-    }
-
+if (this.state.sideDrawerOpen) {
+  sideDrawer = <SideDrawer show={this.state.sideDrawerOpen}/>
+  backdrop = <Backdrop click={this.backdropClickHandler}/>
+}
     return (
       <div style={{ height: "100%" }}>
-        <Toolbar />
-
-        <main style={{marginTop: '64px'}}></main>
+        <Toolbar drawerClickHandler={this.drawerToggleClickHandler}/>
+        {sideDrawer}
+        {backdrop}
+        <main style={{ marginTop: "80px" }} />
+        
         <Slider />
 
         <section className="featured">
