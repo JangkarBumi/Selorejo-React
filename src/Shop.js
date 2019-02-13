@@ -4,7 +4,7 @@ import Navbar from "./components/Navbar"
 import Hero from "./components/Hero"
 import Filter from "./components/Filter"
 import FeaturedShop from "./components/FeaturedShop"
-import Footer from "./components/Footer"
+import Footer from "./components/Footer/Footer"
 
 function Shop () {
     return (

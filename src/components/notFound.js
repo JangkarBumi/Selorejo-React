@@ -1,11 +1,9 @@
 import React from "react";
-import Navbar from "./Navbar";
-import Footer from "./Footer";
+import Footer from "./Footer/Footer.jsx";
 
 function notFound() {
   return (
     <div>
-      <Navbar />
       <h1>404 Not Found</h1>
       <Footer />
     </div>

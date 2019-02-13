@@ -6,7 +6,7 @@ function Slider() {
       <section className="slider">
         <img
           className="slider-img"
-          src="https://raw.githubusercontent.com/JangkarBumi/Selorejo/master/images/pure.png"
+          src=""
           alt=""
         />
       </section>

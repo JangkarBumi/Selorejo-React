@@ -2,7 +2,7 @@ import React from "react"
 import Promo from "./components/Promo"
 import Navbar from "./components/Navbar"
 import Slider from "./components/Slider"
-import Footer from "./components/Footer"
+import Footer from "./components/Footer/Footer"
 import UpperTech from "./components/UpperTech";
 import LowerTech from "./components/LowerTech";
 
