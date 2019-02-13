@@ -2,7 +2,8 @@
   "name": "cra",
   "version": "0.1.0",
   "engines": {
-    "node": "10.3.0"
+    "node": "10.14.1np",
+    "npm": "6.4.1"
   },
   "private": true,
   "dependencies": {

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Slider from "./components/Slider";
 import SideDrawer from "./components/SideDrawer/SideDrawer.jsx";
-import Backdrop from "./components/Backdrop/backdrop.jsx";
+import Backdrop from "./components/Backdrop/Backdrop.jsx";
 import Toolbar from "./components/Toolbar/Toolbar";
 import Footer from "./components/Footer/Footer.jsx";
 
