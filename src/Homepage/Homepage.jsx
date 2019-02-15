@@ -1,9 +1,11 @@
 import React, { Component } from "react";
-import SideDrawer from "./components/SideDrawer/SideDrawer.jsx";
-import Backdrop from "./components/Backdrop/Backdrop.jsx";
-import Toolbar from "./components/Toolbar/Toolbar";
-import Footer from "./components/Footer/Footer.jsx";
-import Slider from "./components/Slider/slider"
+import SideDrawer from "../components/SideDrawer/SideDrawer.jsx";
+import Backdrop from "../components/Backdrop/Backdrop.jsx";
+import Toolbar from "../components/Toolbar/Toolbar";
+import Footer from "../components/Footer/Footer.jsx";
+import Slider from "../components/Slider/slider"
+import './homepage.css'
+
 
 class Homepage extends Component {
   state = {
@@ -30,13 +32,15 @@ class Homepage extends Component {
     }
     return (
       <div>
+
         <Toolbar drawerClickHandler={this.drawerToggleClickHandler} />
         {sideDrawer}
         {backdrop}
         <main style={{ paddingTop: "80px" }} />
-
+<div className="content">
         <Slider />
         <Footer />
+        </div>
       </div>
     );
   }

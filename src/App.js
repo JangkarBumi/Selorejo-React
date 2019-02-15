@@ -1,7 +1,7 @@
 import React from "react"
 import './App.css';
 import "./main"
-import Homepage from "./Homepage";
+import Homepage from "./Homepage/Homepage.jsx";
 import Shop from "./Shop"
 import Product from "./Product"
 import Fabric from "./Fabric"

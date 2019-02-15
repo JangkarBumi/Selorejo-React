@@ -8,6 +8,7 @@
     -webkit-box-shadow: 0 6px 4px -4px black;
   -moz-box-shadow: 0 6px 4px -4px black;
   box-shadow: 0 6px 4px -4px black;
+  z-index: 1000;
 }
 
 .toolbar__logo{

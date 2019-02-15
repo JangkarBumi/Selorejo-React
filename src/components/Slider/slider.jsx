@@ -125,7 +125,7 @@ const Slide = ({ image, isActive }) => {
     backgroundImage: `url(${image})`,
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
-    backgroundPosition: '50% 60%'
+    backgroundPosition: '50% 60%',
   }
   
   return (
