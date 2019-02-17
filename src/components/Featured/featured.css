@@ -1,0 +1,23 @@
+.product-grid:not(:first-child){
+    padding-top: 50px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+grid-template-rows: 1fr 1fr;
+grid-gap: 20px;
+padding-left: 20px;
+padding-right: 20px;
+}
+
+.product-grid ul{
+}
+
+.featured-img{
+    width: 100%;
+}
+
+
+.featured-title{
+text-align: center;
+padding-top:20px;
+}

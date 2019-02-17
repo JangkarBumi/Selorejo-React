@@ -5,6 +5,7 @@ import Toolbar from "../components/Toolbar/Toolbar";
 import Footer from "../components/Footer/Footer.jsx";
 import Slider from "../components/Slider/slider"
 import './homepage.css'
+import Featured from "../components/Featured/featured.jsx";
 
 
 class Homepage extends Component {
@@ -39,6 +40,7 @@ class Homepage extends Component {
         <main style={{ paddingTop: "80px" }} />
 <div className="content">
         <Slider />
+        <Featured />
         <Footer />
         </div>
       </div>
