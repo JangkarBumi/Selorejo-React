@@ -5,8 +5,12 @@ import Toolbar from "../components/Toolbar/Toolbar";
 import Footer from "../components/Footer/Footer.jsx";
 import Slider from "../components/Slider/slider"
 import './homepage.css'
-import Featured from "../components/Featured/featured.jsx";
-
+import Featured from "../components/Featured/featured";
+import About from "../components/About/about"
+import Explore from "../components/Explore/explore"
+import ShopNow from "../components/ShopNow/shopNow"
+import Video from "../components/Vid/video"
+import Seen from "../components/Seen/seen"
 
 class Homepage extends Component {
   state = {
@@ -41,6 +45,11 @@ class Homepage extends Component {
 <div className="content">
         <Slider />
         <Featured />
+        <About />
+        <Explore />
+        <ShopNow />
+        <Video />
+        <Seen />
         <Footer />
         </div>
       </div>

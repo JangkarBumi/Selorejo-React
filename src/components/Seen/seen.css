@@ -1,0 +1,9 @@
+.seen{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.svg-seen{
+    width: 100%;
+}
