@@ -104,10 +104,10 @@ class Featured extends Component {
     render() { 
         const productList = productsData.map(product =>
             (
-         <ul key={product.id}>
+         <ul key={product.id}>             
+             <img className="featured-img" src={product.photo} alt=""/>
              <li> <a href={product.url}>{product.title}</a></li>
              <li>{product.price}</li>
-             <img className="featured-img" src={product.photo} alt=""/>
          </ul>
              ))
 

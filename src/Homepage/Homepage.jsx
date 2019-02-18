@@ -1,47 +1,26 @@
 import React, { Component } from "react";
-import SideDrawer from "../components/SideDrawer/SideDrawer.jsx";
-import Backdrop from "../components/Backdrop/Backdrop.jsx";
-import Toolbar from "../components/Toolbar/Toolbar";
+import './homepage.css'
 import Footer from "../components/Footer/Footer.jsx";
 import Slider from "../components/Slider/slider"
-import './homepage.css'
 import Featured from "../components/Featured/featured";
 import About from "../components/About/about"
 import Explore from "../components/Explore/explore"
 import ShopNow from "../components/ShopNow/shopNow"
 import Video from "../components/Vid/video"
 import Seen from "../components/Seen/seen"
+import Navbar from "../components/Navbar/navbar"
+
 
 class Homepage extends Component {
-  state = {
-    sideDrawerOpen: false
-  };
+ 
 
-  drawerToggleClickHandler = () => {
-    this.setState(prevState => {
-      return { sideDrawerOpen: !prevState.sideDrawerOpen };
-    });
-  };
-
-  backdropClickHandler = () => {
-    this.setState({ sideDrawerOpen: false });
-  };
 
   render() {
-    let sideDrawer;
-    let backdrop;
-
-    if (this.state.sideDrawerOpen) {
-      sideDrawer = <SideDrawer show={this.state.sideDrawerOpen} />;
-      backdrop = <Backdrop click={this.backdropClickHandler} />;
-    }
+    
     return (
       <div>
 
-        <Toolbar drawerClickHandler={this.drawerToggleClickHandler} />
-        {sideDrawer}
-        {backdrop}
-        <main style={{ paddingTop: "80px" }} />
+        <Navbar />
 <div className="content">
         <Slider />
         <Featured />

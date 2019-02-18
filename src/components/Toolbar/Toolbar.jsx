@@ -21,6 +21,7 @@ const toolbar = props => (
 
       <div className="toolbar_navigation-items">
         <ul>
+          
           <li>
             <a className="" href="./shop">
               SHOP

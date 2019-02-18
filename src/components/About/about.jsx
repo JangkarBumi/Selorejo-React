@@ -4,6 +4,7 @@ import './about.css'
 const About = () => {
     return (  
         <div className="about-wrapper">
+        <h1>About</h1>
             <img
               src="https://raw.githubusercontent.com/JangkarBumi/Selorejo/master/images/Background.png"
               alt=""
